@@ -292,7 +292,7 @@
           </ul>
         </address>
       </div>
-      <div class=>
+      <div>
       <p class="joinus">dołącz do nas</p>
        <ul class="flexclickfooter"> <li><a  href="https://www.instagram.com/" 
                 target="_blank"  class="sociallinks clickfooter"><svg class="instagramclick">
@@ -311,11 +311,30 @@
                   <use href="./sprite.svg#icon-linkedin"></use>
                 </svg></a></li>
               </ul>
-                </div>
+              
+                </div><form class="newsletterform">
+                <label for="user-email"class="newsletter-signup">
+                  ZAPISZ SIĘ DO NEWSLETTERA
+                </label>
+                <div class="newsletter">
+                <input id="user-email"type="email" name="email" placeholder="E-mail" class="emailnewsletter"/> <button class="newsletterbutton" type="submit">Zapisz się<svg class="arrow"><use href="./sprite2.svg#icon-arrow"></use></svg></button>
+              </div>
+              </form>
           </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal"><button type="button" class="close-btn" data-modal-close>X</button></div>
+      <form><div role="group" aria-labelledby="formparagraph" class="modal"><p class="formparagraph">Zostaw swoje dane w formularzu poniżej</p>
+        <label for="user-name"class="namelabel">Imię </label>
+       <input class="user-name" id="user-name" type="text"name="name"><svg  class="user-icon"><use href="./sprite2.svg#icon-vectorfirst"></use></svg>
+         <label for="user-phone"class="phonelabel">Telefon </label>
+         <input class="user-phone" id="user-phone" type="tel"name="phone"><svg  class="phone-icon"><use href="./sprite2.svg#icon-vectorsecond"></use></svg>
+          <label for="user-email-account"class="email-account-label">E-mail </label>
+         <input class="user-email-account" id="user-email-account" type="email"name="email-account"><svg  class="email-icon"><use href="./sprite2.svg#icon-vectorthird"></use></svg>
+         <label for="comment"class="comment-label">Komentarze</label>
+         <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="comment"></textarea>
+         <input type="checkbox" id="politics-confirmation" name="confirmation" value="confirmation" class="politics-confirmation" /><svg  class="confirmation-icon"><use href="./sprite2.svg#icon-vectorfifth"></use></svg><label for="politics-confirmation"class="politcslabel">Oświadczam iż akceptuję <a class="statute" href="">Regulamin</a> i <a class="politics" href="">Politykę Prywatności.</a></label>
+          <button type="submit"class="send-button">Wyślij</button>
+         <button type="button" class="close-btn" data-modal-close>X</button></div></form>
     </div>
      <script src="./js/modal.js"></script>
   </body>
